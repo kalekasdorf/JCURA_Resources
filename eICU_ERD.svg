@@ -1,0 +1,643 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600 2200" font-family="'Georgia', serif">
+  <defs>
+    <style>
+      .th { font-family: 'Georgia', serif; font-size: 22px; font-weight: bold; fill: #1a1a2e; }
+      .tf { font-family: 'Courier New', monospace; font-size: 17px; fill: #2d2d2d; }
+      .tb { fill: #ffffff; stroke: #4a4a6a; stroke-width: 2; }
+      .thbg { fill: #dde0f0; stroke: #4a4a6a; stroke-width: 2; }
+      .rl { stroke: #7a7aaa; stroke-width: 2; fill: none; }
+      .ct { font-family: 'Georgia', serif; font-size: 14px; fill: #8888bb; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8" fill="none" stroke="#7a7aaa" stroke-width="1.5"/>
+    </marker>
+  </defs>
+
+  <rect width="3600" height="2200" fill="#f2f2f8"/>
+
+  <!-- RELATIONSHIP LINES -->
+  <!-- patient → AgeGroupIndex -->
+  <polyline points="1490,680 1490,590 1490,470" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → pastHistory -->
+  <polyline points="1460,680 1460,650 1840,650 1840,540" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → respiratoryCare -->
+  <polyline points="1440,680 1440,660 2100,660 2100,540" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → apachePatientResult -->
+  <polyline points="1420,680 1420,670 1080,670 1080,540" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → allergy -->
+  <polyline points="1400,700 800,700 800,660" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → vitalPeriodic -->
+  <polyline points="1400,720 460,720 460,660" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → vitalAperiodic -->
+  <polyline points="1400,740 120,740 120,660" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → admissiondrug -->
+  <polyline points="1400,780 240,780 240,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → treatment -->
+  <polyline points="1420,900 1420,980 620,980 620,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → physicalExam -->
+  <polyline points="1440,900 1440,960 900,960 900,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → nurseCharting -->
+  <polyline points="1480,900 1480,940 1280,940 1280,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → nurseCare -->
+  <polyline points="1560,900 1560,920 1680,920 1680,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → nurseAssessment -->
+  <polyline points="1600,900 1600,900 2060,900 2060,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → note -->
+  <polyline points="1640,900 1640,880 2440,880 2440,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → medication -->
+  <polyline points="1720,750 1880,750 1880,660" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → lab -->
+  <polyline points="1720,760 2200,760 2200,660" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → infusionDrug -->
+  <polyline points="1720,770 2520,770 2520,660" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → microLab -->
+  <polyline points="1720,800 2810,800 2810,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → intakeOutput -->
+  <polyline points="1720,810 3160,810 3160,1400" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → respiratoryCharting -->
+  <polyline points="1720,780 2860,780 2860,660" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → diagnosis -->
+  <polyline points="1720,700 2930,700 2930,520" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → admissionDx -->
+  <polyline points="1720,690 3170,690 3170,520" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → hospital -->
+  <polyline points="1720,720 3300,720 3300,660" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → carePlanCareProvider -->
+  <polyline points="1450,680 1450,340 1240,340 1240,290" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → carePlanEOL -->
+  <polyline points="1470,680 1470,360 1560,360 1560,290" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → carePlanGeneral -->
+  <polyline points="1500,680 1500,380 1870,380 1870,290" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → carePlanGoal -->
+  <polyline points="1530,680 1530,370 2190,370 2190,290" class="rl" marker-end="url(#arr)"/>
+  <!-- patient → carePlanInfectiousDisease -->
+  <polyline points="1560,680 1560,360 2500,360 2500,290" class="rl" marker-end="url(#arr)"/>
+  <!-- apachePatientResult → apacheProvider -->
+  <polyline points="1080,410 1080,340 860,340 860,270" class="rl" marker-end="url(#arr)"/>
+  <!-- apachePatientResult → apacheApiVar -->
+  <polyline points="1080,410 1080,340 180,340 180,270" class="rl" marker-end="url(#arr)"/>
+  <!-- lab → customLab -->
+  <polyline points="2340,540 2340,460 2760,460 2760,290" class="rl" marker-end="url(#arr)"/>
+
+  <!-- ================================================================ -->
+  <!-- ROW 0: top care plan tables y=80 -->
+  <!-- ================================================================ -->
+
+  <!-- apacheApiVar -->
+  <g transform="translate(80,80)">
+    <rect width="290" height="360" rx="6" class="tb"/>
+    <rect width="290" height="40" rx="6" class="thbg"/>
+    <rect width="290" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ apacheApiVar</text>
+    <text x="12" y="68" class="tf">albumin</text>
+    <text x="12" y="94" class="tf">apachepatientid</text>
+    <text x="12" y="120" class="tf">bilirubin</text>
+    <text x="12" y="146" class="tf">bun</text>
+    <text x="12" y="172" class="tf">creatinine</text>
+    <text x="12" y="198" class="tf">dialysis</text>
+    <text x="12" y="224" class="tf">eyes</text>
+    <text x="12" y="250" class="tf">fio2</text>
+    <text x="12" y="276" class="tf">intubation</text>
+    <text x="12" y="302" class="tf">apachepredband</text>
+    <text x="12" y="328" class="tf">crfcures</text>
+    <text x="12" y="350" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- apacheProvider -->
+  <g transform="translate(700,80)">
+    <rect width="290" height="340" rx="6" class="tb"/>
+    <rect width="290" height="40" rx="6" class="thbg"/>
+    <rect width="290" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ apacheProvider</text>
+    <text x="12" y="68" class="tf">activeudc</text>
+    <text x="12" y="94" class="tf">admissionpos</text>
+    <text x="12" y="120" class="tf">admittime</text>
+    <text x="12" y="146" class="tf">age</text>
+    <text x="12" y="172" class="tf">gender</text>
+    <text x="12" y="198" class="tf">intubation</text>
+    <text x="12" y="224" class="tf">apachepredband</text>
+    <text x="12" y="250" class="tf">bedcount</text>
+    <text x="12" y="276" class="tf">patientunitstayid</text>
+    <text x="12" y="318" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- carePlanCareProvider -->
+  <g transform="translate(1120,80)">
+    <rect width="300" height="320" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ carePlanCareProvider</text>
+    <text x="12" y="68" class="tf">activeondc</text>
+    <text x="12" y="94" class="tf">cproviderserialsoffset</text>
+    <text x="12" y="120" class="tf">cplanepisend</text>
+    <text x="12" y="146" class="tf">interventioncategory</text>
+    <text x="12" y="172" class="tf">managingphysician</text>
+    <text x="12" y="198" class="tf">patientunitstayid</text>
+    <text x="12" y="224" class="tf">providertype</text>
+    <text x="12" y="295" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- carePlanEOL -->
+  <g transform="translate(1480,80)">
+    <rect width="280" height="300" rx="6" class="tb"/>
+    <rect width="280" height="40" rx="6" class="thbg"/>
+    <rect width="280" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ carePlanEOL</text>
+    <text x="12" y="68" class="tf">active</text>
+    <text x="12" y="94" class="tf">cplenidunitsoffset</text>
+    <text x="12" y="120" class="tf">cpleintid</text>
+    <text x="12" y="146" class="tf">cplenbaseoffset</text>
+    <text x="12" y="172" class="tf">cpleneoffset</text>
+    <text x="12" y="198" class="tf">patientunitstayid</text>
+    <text x="12" y="272" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- carePlanGeneral -->
+  <g transform="translate(1820,80)">
+    <rect width="280" height="320" rx="6" class="tb"/>
+    <rect width="280" height="40" rx="6" class="thbg"/>
+    <rect width="280" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ carePlanGeneral</text>
+    <text x="12" y="68" class="tf">cplgeneralid</text>
+    <text x="12" y="94" class="tf">cplgeneraloffset</text>
+    <text x="12" y="120" class="tf">cplgroup</text>
+    <text x="12" y="146" class="tf">cplitemoffset</text>
+    <text x="12" y="172" class="tf">cplitemvalue</text>
+    <text x="12" y="198" class="tf">cplname</text>
+    <text x="12" y="224" class="tf">patientunitstayid</text>
+    <text x="12" y="295" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- carePlanGoal -->
+  <g transform="translate(2150,80)">
+    <rect width="280" height="340" rx="6" class="tb"/>
+    <rect width="280" height="40" rx="6" class="thbg"/>
+    <rect width="280" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ carePlanGoal</text>
+    <text x="12" y="68" class="tf">active</text>
+    <text x="12" y="94" class="tf">cplgoaloffset</text>
+    <text x="12" y="120" class="tf">cplgoalid</text>
+    <text x="12" y="146" class="tf">cplgoalstatus</text>
+    <text x="12" y="172" class="tf">cplgoalvalue</text>
+    <text x="12" y="198" class="tf">cplphase</text>
+    <text x="12" y="224" class="tf">cplstatus</text>
+    <text x="12" y="250" class="tf">patientunitstayid</text>
+    <text x="12" y="315" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- carePlanInfectiousDisease -->
+  <g transform="translate(2490,80)">
+    <rect width="310" height="340" rx="6" class="tb"/>
+    <rect width="310" height="40" rx="6" class="thbg"/>
+    <rect width="310" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ carePlanInfectiousDis.</text>
+    <text x="12" y="68" class="tf">active</text>
+    <text x="12" y="94" class="tf">cplinfectiousoffset</text>
+    <text x="12" y="120" class="tf">cplinfectiousid</text>
+    <text x="12" y="146" class="tf">infectiousassessment</text>
+    <text x="12" y="172" class="tf">infectioussite</text>
+    <text x="12" y="198" class="tf">infectioustype</text>
+    <text x="12" y="224" class="tf">responsivetherapy</text>
+    <text x="12" y="250" class="tf">patientunitstayid</text>
+    <text x="12" y="315" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- customLab -->
+  <g transform="translate(2870,80)">
+    <rect width="300" height="370" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ customLab</text>
+    <text x="12" y="68" class="tf">customlabid</text>
+    <text x="12" y="94" class="tf">labname</text>
+    <text x="12" y="120" class="tf">labresult</text>
+    <text x="12" y="146" class="tf">labresultoffset</text>
+    <text x="12" y="172" class="tf">labresultrevisedoffset</text>
+    <text x="12" y="198" class="tf">labtherapyid</text>
+    <text x="12" y="224" class="tf">labtimevalue</text>
+    <text x="12" y="250" class="tf">patientunitstayid</text>
+    <text x="12" y="340" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ROW 1: middle tables y=420 -->
+  <!-- ================================================================ -->
+
+  <!-- vitalAperiodic -->
+  <g transform="translate(60,520)">
+    <rect width="290" height="360" rx="6" class="tb"/>
+    <rect width="290" height="40" rx="6" class="thbg"/>
+    <rect width="290" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ vitalAperiodic</text>
+    <text x="12" y="68" class="tf">cardiacinput</text>
+    <text x="12" y="94" class="tf">cardiacoutput</text>
+    <text x="12" y="120" class="tf">icp</text>
+    <text x="12" y="146" class="tf">noninvasivemean</text>
+    <text x="12" y="172" class="tf">noninvasivesystolic</text>
+    <text x="12" y="198" class="tf">observationoffset</text>
+    <text x="12" y="224" class="tf">paop</text>
+    <text x="12" y="250" class="tf">svr</text>
+    <text x="12" y="276" class="tf">patientunitstayid</text>
+    <text x="12" y="340" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- vitalPeriodic -->
+  <g transform="translate(400,520)">
+    <rect width="290" height="360" rx="6" class="tb"/>
+    <rect width="290" height="40" rx="6" class="thbg"/>
+    <rect width="290" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ vitalPeriodic</text>
+    <text x="12" y="68" class="tf">cvp</text>
+    <text x="12" y="94" class="tf">etco2</text>
+    <text x="12" y="120" class="tf">heartrate</text>
+    <text x="12" y="146" class="tf">observationoffset</text>
+    <text x="12" y="172" class="tf">padiastolic</text>
+    <text x="12" y="198" class="tf">pamean</text>
+    <text x="12" y="224" class="tf">pasystolic</text>
+    <text x="12" y="250" class="tf">patientunitstayid</text>
+    <text x="12" y="340" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- allergy -->
+  <g transform="translate(740,520)">
+    <rect width="300" height="390" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ allergy</text>
+    <text x="12" y="68" class="tf">allergyenteredoffset</text>
+    <text x="12" y="94" class="tf">allergyid</text>
+    <text x="12" y="120" class="tf">allergyname</text>
+    <text x="12" y="146" class="tf">allergynotetype</text>
+    <text x="12" y="172" class="tf">allergysoffset</text>
+    <text x="12" y="198" class="tf">allergytype</text>
+    <text x="12" y="224" class="tf">druglokepo</text>
+    <text x="12" y="250" class="tf">drugname</text>
+    <text x="12" y="276" class="tf">patientunitstayid</text>
+    <text x="12" y="360" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- apachePatientResult -->
+  <g transform="translate(1090,420)">
+    <rect width="310" height="420" rx="6" class="tb"/>
+    <rect width="310" height="40" rx="6" class="thbg"/>
+    <rect width="310" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ apachePatientResult</text>
+    <text x="12" y="68" class="tf">actualicumortality</text>
+    <text x="12" y="94" class="tf">actualhospitalmortality</text>
+    <text x="12" y="120" class="tf">actualiculos</text>
+    <text x="12" y="146" class="tf">actualhospitallos</text>
+    <text x="12" y="172" class="tf">actualventdays</text>
+    <text x="12" y="198" class="tf">acuhephologyscore</text>
+    <text x="12" y="224" class="tf">apachetreatmentscode</text>
+    <text x="12" y="250" class="tf">apachescore</text>
+    <text x="12" y="276" class="tf">apacheversion</text>
+    <text x="12" y="302" class="tf">patientunitstayid</text>
+    <text x="12" y="390" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- AgeGroupIndex -->
+  <g transform="translate(1400,390)">
+    <rect width="260" height="195" rx="6" class="tb"/>
+    <rect width="260" height="40" rx="6" class="thbg"/>
+    <rect width="260" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ AgeGroupIndex</text>
+    <text x="12" y="68" class="tf">AgeGroup</text>
+    <text x="12" y="94" class="tf">index</text>
+    <text x="12" y="165" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- pastHistory -->
+  <g transform="translate(1740,420)">
+    <rect width="310" height="400" rx="6" class="tb"/>
+    <rect width="310" height="40" rx="6" class="thbg"/>
+    <rect width="310" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ pastHistory</text>
+    <text x="12" y="68" class="tf">pasthistoryenteredoffset</text>
+    <text x="12" y="94" class="tf">pasthistoryid</text>
+    <text x="12" y="120" class="tf">pasthistorynotetype</text>
+    <text x="12" y="146" class="tf">pasthistoryoffset</text>
+    <text x="12" y="172" class="tf">pasthistorypath</text>
+    <text x="12" y="198" class="tf">pasthistoryvalue</text>
+    <text x="12" y="224" class="tf">currenthistorynum</text>
+    <text x="12" y="250" class="tf">hasmounted</text>
+    <text x="12" y="276" class="tf">patientunitstayid</text>
+    <text x="12" y="370" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- respiratoryCare -->
+  <g transform="translate(2100,420)">
+    <rect width="300" height="400" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ respiratoryCare</text>
+    <text x="12" y="68" class="tf">airwayposition</text>
+    <text x="12" y="94" class="tf">airwaysize</text>
+    <text x="12" y="120" class="tf">airwaytype</text>
+    <text x="12" y="146" class="tf">actualweight</text>
+    <text x="12" y="172" class="tf">cpadinit</text>
+    <text x="12" y="198" class="tf">luffspressure</text>
+    <text x="12" y="224" class="tf">currenthistorynum</text>
+    <text x="12" y="250" class="tf">hospitalresnum</text>
+    <text x="12" y="276" class="tf">patientunitstayid</text>
+    <text x="12" y="370" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- medication -->
+  <g transform="translate(1860,540)">
+    <rect width="290" height="360" rx="6" class="tb"/>
+    <rect width="290" height="40" rx="6" class="thbg"/>
+    <rect width="290" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ medication</text>
+    <text x="12" y="68" class="tf">druglokepo</text>
+    <text x="12" y="94" class="tf">drugadmixture</text>
+    <text x="12" y="120" class="tf">drugname</text>
+    <text x="12" y="146" class="tf">drugorderoffset</text>
+    <text x="12" y="172" class="tf">drugordercancelled</text>
+    <text x="12" y="198" class="tf">drugsoffset</text>
+    <text x="12" y="224" class="tf">frequency</text>
+    <text x="12" y="250" class="tf">patientunitstayid</text>
+    <text x="12" y="335" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- lab -->
+  <g transform="translate(2200,540)">
+    <rect width="310" height="360" rx="6" class="tb"/>
+    <rect width="310" height="40" rx="6" class="thbg"/>
+    <rect width="310" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ lab</text>
+    <text x="12" y="68" class="tf">labmeasurenameinterface</text>
+    <text x="12" y="94" class="tf">labmeasurenamesystem</text>
+    <text x="12" y="120" class="tf">labname</text>
+    <text x="12" y="146" class="tf">labresult</text>
+    <text x="12" y="172" class="tf">labresultoffset</text>
+    <text x="12" y="198" class="tf">labresultrevisedoffset</text>
+    <text x="12" y="224" class="tf">labtimevalue</text>
+    <text x="12" y="250" class="tf">patientunitstayid</text>
+    <text x="12" y="335" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- infusionDrug -->
+  <g transform="translate(2560,540)">
+    <rect width="290" height="320" rx="6" class="tb"/>
+    <rect width="290" height="40" rx="6" class="thbg"/>
+    <rect width="290" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ infusionDrug</text>
+    <text x="12" y="68" class="tf">drugamount</text>
+    <text x="12" y="94" class="tf">drugname</text>
+    <text x="12" y="120" class="tf">drugrate</text>
+    <text x="12" y="146" class="tf">infusionoffset</text>
+    <text x="12" y="172" class="tf">infusiontotal</text>
+    <text x="12" y="198" class="tf">patientunitstayid</text>
+    <text x="12" y="290" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- respiratoryCharting -->
+  <g transform="translate(2880,540)">
+    <rect width="300" height="320" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ respiratoryCharting</text>
+    <text x="12" y="68" class="tf">respchartid</text>
+    <text x="12" y="94" class="tf">patientunitstayid</text>
+    <text x="12" y="120" class="tf">respchartoffset</text>
+    <text x="12" y="146" class="tf">respcharttypecat</text>
+    <text x="12" y="172" class="tf">respchartvaluelabel</text>
+    <text x="12" y="198" class="tf">respchartvalue</text>
+    <text x="12" y="290" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- diagnosis -->
+  <g transform="translate(2890,420)">
+    <rect width="300" height="360" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ diagnosis</text>
+    <text x="12" y="68" class="tf">activeuponadmission</text>
+    <text x="12" y="94" class="tf">ClinicalGroup</text>
+    <text x="12" y="120" class="tf">diagnosisid</text>
+    <text x="12" y="146" class="tf">diagnosisoffset</text>
+    <text x="12" y="172" class="tf">diagnosisstring</text>
+    <text x="12" y="198" class="tf">diseasecategory</text>
+    <text x="12" y="224" class="tf">diseasetreatment</text>
+    <text x="12" y="250" class="tf">diseasetreatmentcause</text>
+    <text x="12" y="276" class="tf">patientunitstayid</text>
+    <text x="12" y="335" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- admissionDx -->
+  <g transform="translate(3230,420)">
+    <rect width="310" height="300" rx="6" class="tb"/>
+    <rect width="310" height="40" rx="6" class="thbg"/>
+    <rect width="310" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ admissionDx</text>
+    <text x="12" y="68" class="tf">admissiondxid</text>
+    <text x="12" y="94" class="tf">admissiondxenteredoffset</text>
+    <text x="12" y="120" class="tf">admissiondxname</text>
+    <text x="12" y="146" class="tf">admissionpath</text>
+    <text x="12" y="172" class="tf">patientunitstayid</text>
+    <text x="12" y="270" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- hospital -->
+  <g transform="translate(3250,540)">
+    <rect width="300" height="300" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ hospital</text>
+    <text x="12" y="68" class="tf">hospitalid</text>
+    <text x="12" y="94" class="tf">numbedscategory</text>
+    <text x="12" y="120" class="tf">region</text>
+    <text x="12" y="146" class="tf">teachingstatus</text>
+    <text x="12" y="172" class="tf">teachinghospitallabel</text>
+    <text x="12" y="270" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- PATIENT (central, highlighted) -->
+  <g transform="translate(1390,680)">
+    <rect width="340" height="460" rx="6" fill="#fff8f0" stroke="#c07030" stroke-width="3"/>
+    <rect width="340" height="40" rx="6" fill="#f5dbb8" stroke="#c07030" stroke-width="3"/>
+    <rect width="340" height="8" y="32" fill="#f5dbb8"/>
+    <text x="12" y="28" class="th" fill="#7a3010">⊞ patient</text>
+    <text x="12" y="72" class="tf">patientunitstayid</text>
+    <text x="12" y="98" class="tf">uniquepid</text>
+    <text x="12" y="124" class="tf">admissionid</text>
+    <text x="12" y="150" class="tf">admissionweight</text>
+    <text x="12" y="176" class="tf">age</text>
+    <text x="12" y="202" class="tf">AgeGroup</text>
+    <text x="12" y="228" class="tf">admittedabove65</text>
+    <text x="12" y="254" class="tf">dischargeweight</text>
+    <text x="12" y="280" class="tf">ethnicity</text>
+    <text x="12" y="306" class="tf">gender</text>
+    <text x="12" y="332" class="tf">hospitaladmitid</text>
+    <text x="12" y="358" class="tf">hospitaldischargestatus</text>
+    <text x="12" y="384" class="tf">unitdischargestatus</text>
+    <text x="12" y="430" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ROW 2: bottom tables y=1400 -->
+  <!-- ================================================================ -->
+
+  <!-- admissiondrug -->
+  <g transform="translate(80,1400)">
+    <rect width="300" height="390" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ admissiondrug</text>
+    <text x="12" y="68" class="tf">admissiondrugid</text>
+    <text x="12" y="94" class="tf">drugadmitfrequency</text>
+    <text x="12" y="120" class="tf">drugdosage</text>
+    <text x="12" y="146" class="tf">drugenteredoffset</text>
+    <text x="12" y="172" class="tf">drugnotetype</text>
+    <text x="12" y="198" class="tf">drugsoffset</text>
+    <text x="12" y="224" class="tf">drugtype</text>
+    <text x="12" y="250" class="tf">drugpath</text>
+    <text x="12" y="276" class="tf">patientunitstayid</text>
+    <text x="12" y="360" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- treatment -->
+  <g transform="translate(450,1400)">
+    <rect width="300" height="340" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ treatment</text>
+    <text x="12" y="68" class="tf">activeuponadmission</text>
+    <text x="12" y="94" class="tf">patientunitstayid</text>
+    <text x="12" y="120" class="tf">treatmentid</text>
+    <text x="12" y="146" class="tf">treatmentoffset</text>
+    <text x="12" y="172" class="tf">treatmentstring</text>
+    <text x="12" y="198" class="tf">lowtreatmentstring</text>
+    <text x="12" y="310" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- physicalExam -->
+  <g transform="translate(820,1400)">
+    <rect width="300" height="340" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ physicalExam</text>
+    <text x="12" y="68" class="tf">patientunitstayid</text>
+    <text x="12" y="94" class="tf">physicalexamid</text>
+    <text x="12" y="120" class="tf">physicalexamoffset</text>
+    <text x="12" y="146" class="tf">physicalexampath</text>
+    <text x="12" y="172" class="tf">physicalexamtext</text>
+    <text x="12" y="198" class="tf">physicalexamvalue</text>
+    <text x="12" y="310" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- nurseCharting -->
+  <g transform="translate(1190,1400)">
+    <rect width="330" height="410" rx="6" class="tb"/>
+    <rect width="330" height="40" rx="6" class="thbg"/>
+    <rect width="330" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ nurseCharting</text>
+    <text x="12" y="68" class="tf">nursingchartcelltycat</text>
+    <text x="12" y="94" class="tf">nursingchartcelltypevallabel</text>
+    <text x="12" y="120" class="tf">nursingchartcelltypevalname</text>
+    <text x="12" y="146" class="tf">nursingchartenteredoffset</text>
+    <text x="12" y="172" class="tf">nursingchartid</text>
+    <text x="12" y="198" class="tf">nursingchartoffset</text>
+    <text x="12" y="224" class="tf">nursingchartvalue</text>
+    <text x="12" y="250" class="tf">patientunitstayid</text>
+    <text x="12" y="380" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- nurseCare -->
+  <g transform="translate(1590,1400)">
+    <rect width="300" height="380" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ nurseCare</text>
+    <text x="12" y="68" class="tf">cellattribute</text>
+    <text x="12" y="94" class="tf">cellattributepath</text>
+    <text x="12" y="120" class="tf">cellattributevalue</text>
+    <text x="12" y="146" class="tf">celllabel</text>
+    <text x="12" y="172" class="tf">nursecarenteredoffset</text>
+    <text x="12" y="198" class="tf">nurseneed</text>
+    <text x="12" y="224" class="tf">nursecaresoffset</text>
+    <text x="12" y="250" class="tf">patientunitstayid</text>
+    <text x="12" y="350" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- nurseAssessment -->
+  <g transform="translate(1960,1400)">
+    <rect width="300" height="360" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ nurseAssessment</text>
+    <text x="12" y="68" class="tf">cellattribute</text>
+    <text x="12" y="94" class="tf">cellattributepath</text>
+    <text x="12" y="120" class="tf">cellattributevalue</text>
+    <text x="12" y="146" class="tf">nurseassessmentoffset</text>
+    <text x="12" y="172" class="tf">nurseassessid</text>
+    <text x="12" y="198" class="tf">patientunitstayid</text>
+    <text x="12" y="330" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- note -->
+  <g transform="translate(2330,1400)">
+    <rect width="290" height="340" rx="6" class="tb"/>
+    <rect width="290" height="40" rx="6" class="thbg"/>
+    <rect width="290" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ note</text>
+    <text x="12" y="68" class="tf">noteenteredoffset</text>
+    <text x="12" y="94" class="tf">noteid</text>
+    <text x="12" y="120" class="tf">notepath</text>
+    <text x="12" y="146" class="tf">noteoffset</text>
+    <text x="12" y="172" class="tf">notevalue</text>
+    <text x="12" y="198" class="tf">patientunitstayid</text>
+    <text x="12" y="310" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- microLab -->
+  <g transform="translate(2700,1400)">
+    <rect width="290" height="340" rx="6" class="tb"/>
+    <rect width="290" height="40" rx="6" class="thbg"/>
+    <rect width="290" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ microLab</text>
+    <text x="12" y="68" class="tf">culturetakenoffset</text>
+    <text x="12" y="94" class="tf">culturesite</text>
+    <text x="12" y="120" class="tf">organism</text>
+    <text x="12" y="146" class="tf">sensitivitylevel</text>
+    <text x="12" y="172" class="tf">microlabid</text>
+    <text x="12" y="198" class="tf">patientunitstayid</text>
+    <text x="12" y="310" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- intakeOutput -->
+  <g transform="translate(3060,1400)">
+    <rect width="300" height="420" rx="6" class="tb"/>
+    <rect width="300" height="40" rx="6" class="thbg"/>
+    <rect width="300" height="8" y="32" fill="#dde0f0"/>
+    <text x="12" y="28" class="th">⊞ intakeOutput</text>
+    <text x="12" y="68" class="tf">celllabel</text>
+    <text x="12" y="94" class="tf">cellpath</text>
+    <text x="12" y="120" class="tf">celllabelcolumn</text>
+    <text x="12" y="146" class="tf">cellvaluenum</text>
+    <text x="12" y="172" class="tf">dialout</text>
+    <text x="12" y="198" class="tf">intakeoutputid</text>
+    <text x="12" y="224" class="tf">intaketotal</text>
+    <text x="12" y="250" class="tf">outputtotal</text>
+    <text x="12" y="276" class="tf">nettotal</text>
+    <text x="12" y="302" class="tf">patientunitstayid</text>
+    <text x="12" y="390" class="ct">Collapse ∧</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- TITLE & LEGEND -->
+  <!-- ================================================================ -->
+  <text x="1800" y="2090" font-family="Georgia, serif" font-size="40" font-weight="bold" fill="#1a1a2e" text-anchor="middle">eICU Collaborative Research Database — Entity Relationship Diagram</text>
+  <text x="1800" y="2140" font-family="Georgia, serif" font-size="24" fill="#6a6a9a" text-anchor="middle">Scalable Vector Format (SVG) · All tables and fields · Suitable for high-resolution academic poster printing</text>
+
+  <!-- Legend -->
+  <rect x="60" y="1960" width="440" height="140" rx="6" fill="white" stroke="#4a4a6a" stroke-width="2"/>
+  <text x="80" y="1992" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#1a1a2e">Legend</text>
+  <rect x="80" y="2004" width="70" height="30" rx="3" fill="#fff8f0" stroke="#c07030" stroke-width="2.5"/>
+  <text x="162" y="2025" font-family="Georgia, serif" font-size="20" fill="#2d2d2d">Central / key table</text>
+  <rect x="80" y="2044" width="70" height="30" rx="3" fill="#ffffff" stroke="#4a4a6a" stroke-width="2"/>
+  <text x="162" y="2065" font-family="Georgia, serif" font-size="20" fill="#2d2d2d">Standard entity table</text>
+  <line x1="80" y1="2088" x2="150" y2="2088" stroke="#7a7aaa" stroke-width="2.5"/>
+  <text x="162" y="2094" font-family="Georgia, serif" font-size="20" fill="#2d2d2d">FK relationship</text>
+
+</svg>
